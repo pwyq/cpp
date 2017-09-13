@@ -1,0 +1,8 @@
+Focal length of objective: 100 mm
+This should not appear on the first function call.
+f.1. eyepiece  magnification
+         1.0            100
+         1.0            100
+         1.0            100
+         1.0            100
+         1.0            100
