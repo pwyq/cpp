@@ -2,7 +2,7 @@
  * File              : ece250a1-2.cpp
  * Author            : Yanqing Wu <meet.yanqing.wu@gmail.com>
  * Date              : 21.09.2017
- * Last Modified Date: 21.09.2017
+ * Last Modified Date: 24.09.2017
  * Last Modified By  : Yanqing Wu <meet.yanqing.wu@gmail.com>
  */
 
@@ -33,7 +33,8 @@ int PUZZLE(int * ptr_array, int l, int r){
     std::cout << "r = " << r << ", array[r] = " << ptr_array[r] << std::endl;
 
     if (ptr_array[l] == ptr_array[r]){
-        return ptr_array[l];
+         std::cout << "\n -- function call ended -- " << std::endl;
+         return ptr_array[l];
     }
     
     int temp1 = PUZZLE(ptr_array, l, ((l+r))/2);
@@ -41,9 +42,11 @@ int PUZZLE(int * ptr_array, int l, int r){
     std::cout << "temp 1 = " << temp1 << ", temp 2 = " << temp2 << std::endl;
 
     if (temp1 < temp2){
-        return temp1;
+         std::cout << "\n -- function call ended -- " << std::endl;
+         return temp1;
     }
     else{
+        std::cout << "\n -- function call ended -- " << std::endl;
         return temp2;
     }
 
